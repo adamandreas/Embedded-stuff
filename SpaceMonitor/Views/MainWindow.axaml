@@ -13,6 +13,13 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid ColumnDefinitions="*" RowDefinitions="*,Auto">
+        <DockPanel Grid.Column="0" Grid.Row="0">
+            <TextBlock DockPanel.Dock="Top" Text="{Binding Status}" Margin="10" FontWeight="Bold"/>
+            <ListBox ItemsSource="{Binding Messages}" FontFamily="Consolas, Courier New" AutoScrollToSelectedItem="True"/>
+        </DockPanel>
+        
+        <Button Content="start reading" Grid.Column="0" Grid.Row="1" Command="{Binding startReadingButtonCommand}"></Button>
+    </Grid>
 
 </Window>
