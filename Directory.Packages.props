@@ -12,5 +12,7 @@
     <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageVersion Include="Serilog" Version="3.0.1" />
     <PackageVersion Include="System.IO.Ports" Version="10.0.0" />
+    <PackageVersion Include="OxyPlot.Core" Version="2.1.0" />
+    <PackageVersion Include="OxyPlot.Avalonia" Version="2.1.0-Avalonia11" />
   </ItemGroup>
 </Project>
